@@ -58,7 +58,7 @@ plot(dataset$datetime, dataset$Voltage, type="l", xlab="datetime", ylab="Voltage
 plot(dataset$datetime, dataset$Sub_metering_1, type="l", xlab="", ylab="Energy sub metering")
 points(dataset$datetime, dataset$Sub_metering_2, type="l", col="red")
 points(dataset$datetime, dataset$Sub_metering_3, type="l", col="blue")
-legend("topright", lty=1, col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+legend("topright", lty=1, bty="n", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 
 # sub-plot 4
 plot(dataset$datetime, dataset$Global_reactive_power, type="l", xlab="datetime", ylab="Global_reactive_power")
